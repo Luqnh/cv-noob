@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Cristiano ronaldo</title>
+  </head>
+  <body>
+    <div class="left-container">
+      <div class="photo-contact">
+        <img src="b.jpg" class="photo" />
+        <h1>Contact Me</h1>
+        <a onclick="window.open('https://t.me/+123456789');">
+          <button class="button-1">Email</button>
+        </a>
+        <a onclick="window.open('https://wa.me/+6108212');">
+          <button class="button-1">WhatsApp</button>
+        </a>
+        <br />
+        <p><b> Text Atau Number Untuk Memunculkan Suara </b></p>
+        <!-- play sound -->
+        <input class="play1" id="message" type="text" />
+        <br />
+        <button class="play" onclick="play()">Play</button>
+        <!-- akhir sound -->
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="right-container">
+      <div class="top-bar">
+        <a href="" class="title">Gak Jelas</a>
+        <div class="navbar">
+          <a href="#about" class="manu">about</a>
+          <a href="#experience" class="manu">Bitcoin</a>
+          <a href="#achievments" class="manu">Market</a>
+          <a href="#contact" class="manu">contact</a>
+        </div>
+      </div>
+      <!-- akhir navbar -->
+      <div id="profile">
+        <h1>Bitcoin</h1>
+        <h2>2022 ditahun itu bitcoin anjlok</h2>
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p>
+          Bitcoin kerap digolongkan sebagai salah satu cryptocurrency atau mata
+          uang kripto. Dikarenakan ini adalah mata uang digital, orang-orang
+          dapat menggunakannya untuk membeli produk atau layanan. Nantinya,
+          semua transaksi yang dilakukan dengan Bitcoin akan tercatat dalam
+          blockchain yang bersifat publik.
+        </p>
+      </div>
+      <div id="experience">
+        <h2>Get started with Bitcoin</h2>
+        <br />
+        <h3>
+          Bitcoin uses peer-to-peer technology to operate with no central
+          authority or banks; managing transactions and the issuing of bitcoins
+          is carried out collectively by the network. Bitcoin is open-source;
+          its design is public, nobody owns or controls Bitcoin and everyone can
+          take part. Through many of its unique properties, Bitcoin allows
+          exciting uses that could not be covered by any previous payment
+          system.
+        </h3>
+        <br />
+      </div>
+      <div id="achievments">
+        <h2>Market</h2>
+        <br />
+        <li>Coinmarketcap.com</li>
+        <li>Coingeco.com</li>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p><b>Phone:</b> 08000000000000</p>
+        <p><b>Email:</b> add@gmail.com</p>
+        <p><b>addres:</b>belum tahu</p>
+      </div>
+      <div id="footer">
+        <h4><b>@gmail.bitcoin</b></h4>
+      </div>
+    </div>
+    <!-- java sound -->
+    <script>
+      const speech = new SpeechSynthesisUtterance();
+
+      function play() {
+        const message = document.getElementById("message").value;
+        speech.lang = "en";
+        speech.text = message;
+        window.speechSynthesis.speak(speech);
+      }
+    </script>
+    <!-- Akhir Java Sound -->
+  </body>
+</html>
