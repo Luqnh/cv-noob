@@ -12,20 +12,26 @@
     <div class="left-container">
       <div class="photo-contact">
         <img src="b.jpg" class="photo" />
-        <h1>Contact Me</h1>
-        <a onclick="window.open('https://t.me/+123456789');">
-          <button class="button-1">Email</button>
-        </a>
-        <a onclick="window.open('https://wa.me/+6108212');">
-          <button class="button-1">WhatsApp</button>
-        </a>
-        <br />
-        <p><b> Text Atau Number Untuk Memunculkan Suara </b></p>
-        <!-- play sound -->
-        <input class="play1" placeholder="Ketik Disini" id="message" type="text" />
-        <br />
-        <button class="play" onclick="play()">Play</button>
-        <!-- akhir sound -->
+          <h1 id="hp">Contact Me</h1>
+          <a onclick="window.open('https://t.me/+123456789');">
+            <button class="button-1">Email</button>
+          </a>
+          <a onclick="window.open('https://wa.me/+6108212');">
+            <button class="button-1">WhatsApp</button>
+          </a>
+          <br />
+          <p><b> Text Atau Number Untuk Memunculkan Suara </b></p>
+          <!-- play sound -->
+          <input
+            class="play1"
+            placeholder="Ketik Disini"
+            id="message"
+            type="text"
+          />
+          <br />
+          <button class="play" onclick="play()">Play</button>
+          <!-- akhir sound -->
+        </div>
       </div>
     </div>
     <!-- navbar -->
@@ -84,12 +90,14 @@
         <h4><b>@gmail.bitcoin</b></h4>
       </div>
     </div>
-        <div class="container">
+    <!-- anime -->
+    <div class="container">
       <div class="sun"></div>
       <div class="earth">
         <div class="moon"></div>
       </div>
     </div>
+    <!-- akhir anime -->
     <!-- java sound -->
     <script>
       const speech = new SpeechSynthesisUtterance();
